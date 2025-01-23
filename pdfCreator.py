@@ -42,7 +42,7 @@ def create_claim_denial_pdf(patient_name, patient_address, patient_city_state_zi
 
     # Save PDF to a BytesIO object
     pdf_output = BytesIO()
-    pdf.output(pdf_output)
+    pdf.output(pdf_output,'F')
     pdf_output.seek(0)
     return pdf_output
 
