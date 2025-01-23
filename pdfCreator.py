@@ -1,5 +1,6 @@
 import streamlit as st
 from fpdf import FPDF
+from io import BytesIO
 
 # Function to create the PDF
 def create_claim_denial_pdf(patient_name, patient_address, patient_city_state_zip, claim_details):
